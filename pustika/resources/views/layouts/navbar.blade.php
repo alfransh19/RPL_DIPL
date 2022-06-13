@@ -40,7 +40,6 @@
                     Welcome back, {{ auth()->user()->name }}
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                    <li><a class="dropdown-item" href="/bookmarks"><i class="bi bi-book"></i> Read </a></li>
                     <li><a class="dropdown-item" href="/cart"><i class="bi bi-cart3"></i> Cart</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
