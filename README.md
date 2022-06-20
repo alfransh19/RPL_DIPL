@@ -1,3 +1,5 @@
+# Updated project is at the master branch
+
 # RPL_DIPL
 The project doesn't have an etc file (make/find it on your own)
 The root page is '/'
