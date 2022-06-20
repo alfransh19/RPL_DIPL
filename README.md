@@ -1,5 +1,5 @@
 # RPL_DIPL
-The project doesn;t have an etc file (make/find it on your own)
+The project doesn't have an etc file (make/find it on your own)
 The root page is '/'
 
 Seeded user credentials: 
