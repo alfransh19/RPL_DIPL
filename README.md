@@ -3,8 +3,8 @@ The project doesn;t have an etc file (make/find it on your own)
 The root page is '/'
 
 Seeded user credentials: 
-1. admin|password (isAdmin)
-2. test|password (notAdmin)
+1. username: admin | password: password (can access admin dashboard)
+2. username: test| password: password
  
 How to run the project:
 1. First run xampp
