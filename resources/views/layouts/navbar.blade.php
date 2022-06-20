@@ -32,7 +32,14 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="/bookmarks"><i class="bi bi-book"></i> Read </a></li>
-              <li><a class="dropdown-item" href="/cart"><i class="bi bi-cart3"></i> Cart</a></li>
+              <li>
+                <a class="dropdown-item" href="/cart">
+                  <i class="bi bi-cart3"></i> Cart
+                  <span class="badge rounded-pill bg-danger">
+                    {{Session::has('cart') ? Session::get('cart')->totalQty : ''}}
+                  </span>
+                </a>
+              </li>
               @if (auth()->user()->isAdmin == true)
               <li><a class="dropdown-item" href="/dashboard"><i class="bi bi-clipboard-data"></i> Dashboard</a></li>
               @endif

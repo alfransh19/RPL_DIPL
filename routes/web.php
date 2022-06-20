@@ -45,3 +45,7 @@ Route::get('/dashboard', function(){
 
 Route::resource('/dashboard/books', BookController::class)->middleware('auth');
 Route::resource('/dashboard/books', BookController::class);
+// add cart
+Route::get('/add-to-cart/{id}',[
+    CartController::class, 'getAddToCart'
+]);

@@ -20,7 +20,7 @@
                   </div>
                   <div>
                     <div class="float-start price">${{$book->price}}</div>
-                    <a href="#" class="btn btn-success float-end">Add to Cart</a>
+                    <a href="/add-to-cart/{{ $book->id }}" class="btn btn-success float-end">Add to Cart</a>
                   </div>
                 </div>
             </div>
