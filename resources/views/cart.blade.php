@@ -41,6 +41,6 @@
                 <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
                     <strong>No Item In Cart</strong>
                 </div>
-            </div>
+    </div>
     @endif
 @endsection

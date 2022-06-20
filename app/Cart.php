@@ -21,6 +21,7 @@ namespace App;
                 $storedItem = $items[$id];
             }
         }
+        
         $storedItem['qty']++;
         $storedItem['price'] = $item->price *$storedItem['qty'];
         $storedItem[$id]=$storedItem;

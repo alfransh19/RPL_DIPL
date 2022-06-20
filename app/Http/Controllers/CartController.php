@@ -12,6 +12,7 @@ class CartController extends Controller
     public function show(){
         return view("/cart", ["title"=>"Cart"]);
     }
+
     public function getAddToCart(Request $request, $id){
         $books=Book::find($id);
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
@@ -21,6 +22,7 @@ class CartController extends Controller
         $request->session()->put('cart',$cart);
         return redirect()->route('');
     }
+
     public function getCart(){
         if (!Session::has('cart') ){
             return view("/cart", ['books'=>null]);
@@ -30,4 +32,5 @@ class CartController extends Controller
         return view("/cart",  ['books' => $cart->items, 'totalPrice' => $cart->totalPrice]);
 
     }
+    
 }
