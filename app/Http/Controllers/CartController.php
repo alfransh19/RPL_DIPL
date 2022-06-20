@@ -19,7 +19,7 @@ class CartController extends Controller
         $cart->add($books, $books->id);
 
         $request->session()->put('cart',$cart);
-        return redirect()->route('/');
+        return redirect()->route('');
     }
     public function getCart(){
         if (!Session::has('cart') ){
@@ -27,7 +27,7 @@ class CartController extends Controller
         }
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
-        return view("/cart",['books' => $cart->items, 'totalPrice' => $cart->totalPrice]);
+        return view("/cart",  ['books' => $cart->items, 'totalPrice' => $cart->totalPrice]);
 
     }
 }

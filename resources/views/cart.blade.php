@@ -4,7 +4,7 @@
         <div class= row>
             <div class = "col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
                 <ul class="list-group">
-                    @foreach ($books as $book)
+                    @foreach ($cart->items as $book)
                         <li class="list-group-itmes">
                             <span class="badge">{{ $book['qty'] }}</span>
                             <strong>{{ $book['item']['title'] }}</strong>
