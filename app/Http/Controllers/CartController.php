@@ -20,7 +20,7 @@ class CartController extends Controller
         $cart->add($books, $books->id);
 
         $request->session()->put('cart',$cart);
-        return redirect()->route('');
+        return redirect('/');
     }
 
     public function getCart(){
